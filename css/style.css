@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header */
+    /* adjust social + input */
+.header{
+    background-color: rgb(0, 151, 151);
+    height: 100vh;
+}
+.navbar{
+    padding: 0 2rem;
+    background-color: rgb(104, 102, 102);
+
+}
+.navbar a{
+    color: white !important;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.right-menu{margin-top: 30px;}
+.right-menu li{
+    display: inline-block;
+    list-style: none;
+    padding:0 .2rem;
+    color: white;
+    
+}
+.right-menu input{
+    background-color: black;
+    color: white;
+}
+ 
+.navbar-brand img{
+    width: 160px;
+/* format logo center in header */
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+/* end Header */
+/* banner */
+.banner-img{
+    width: 60%;
+    margin: 80px 115px;
+}
+.banner-img img{
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+    
+}
+.banner-title{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+.banner-title h1{
+    font-size: 55px;
+    color: rgb(236, 233, 233);
+    background-color: rgba(0, 0, 0, .7);
+    line-height: 70px;
+    padding: 10px 10px 0 20px;
+    
+}
+/* fashion trends */
+    /* format title */
+.fashion-trends{
+    padding:100px 0;
+}.fashion-box{
+    margin: 80px 0;
+}.fashion-box-title{
+    width: 80%;
+    height: 120px;
+    max-width: 770px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 5px 0 rgba(0 , 0, 50, 0.5);
+    /* contain not attribute -> when format after,ex: position: absolute; 0 -> after push on top page */
+    position: relative;
+    bottom: 3rem;
+    
+    
+}.fashion-box-title  h1{
+    padding: 40px 0;
+}
+section .fashion-box-title ::after{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    top:-10px;
+    left: -10px;
+    z-index: -1;
+}.fashion-box-title::before{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+}
+
+.introductionStyle img{
+    width: 100%;
+    display: block;
+}
+.introductionStyle .btn-buy{
+    width: 30%;
+    padding: .5rem 1rem;
+    outline: none;
+    border:1px thin black;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    /* ????combine top & transorm */
+    left:50%;
+    transform:  translateX(-50%);
+    /* format center but handmade -> button not in center
+    margin-left: 35%; */
+    transition: 0.6s;
+    opacity: 0;
+}
+.introductionStyle img :hover .btn-buy{
+    transform: (-50%,50%);
+    bottom: 50%;
+    opacity: 1;
+}
+
+    /* section fashion exclusive */
+
+.offer{
+    background-color: black;
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    height: 60vh;
+}
+.subcribe{
+    width: 80%;
+    background-color: #ffffff8c;
+    margin:100px 0 20px 100px;
+    padding: 40px 60px;
+}
+.linkYoutube{
+    background-color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+.offer img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 190px 0;
+}
+/* LAST-BLOG */
+.fashion-blog{
+    margin: 25rem 0 10rem 0;
+}
+.blog-img{
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    display: inline-block;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+   
+}
+.fashion-blog h5{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    
+}
+/* fashion-brands */
+.fashion-brands{
+    margin-bottom: 200px;
+}
+.brand-logo{
+    height: 200px;
+    width: 200px;
+   
+    border-radius: 50%;
+    margin:50px auto 30px;
+    box-shadow: 0 2px 40px 20px rgba(88, 110, 197, 0.3);
+}.brand-logo img{
+    width: 100px;
+    margin:50px auto
+}
+/* footer */
+footer{
+    position: relative;
+    height: 60vh;
+    color: white;
+    background-color: black;
+}
+footer h5{
+    margin: 2rem 0 3rem;
+   
+}
+footer h5::before{
+    content: '';
+    width: 70px;
+    height: 5px;
+    background-color: #4f74e8;
+    position: absolute;
+    top: 55px;
+}
+.payment img{
+    width: 300px;
+    cursor: pointer;
+}
+.insta-img img{
+    height: 100px;
+    width: 100px;
+    margin:5px 0 5px 5px;
+}
+/* 33 add animatin use z_index */
+
